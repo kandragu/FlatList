@@ -16,7 +16,7 @@ class Flexbox extends Component {
     return (
       <View style={styles.container}>
         <Text> Flexbox</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Intro')} >
+        <TouchableOpacity onPress={() => navigation.navigate('List')}>
         <Text>Press here</Text>
         </TouchableOpacity>
         <Redbox />

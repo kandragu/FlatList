@@ -3,6 +3,8 @@ import FlexBox from './src/screens/Flexbox';
 import Walkthrough from './src/screens/Walkthrough';
 import AuthLoadingScreen from './src/screens/AuthLoadingScreen';
 import SignInScreen from './src/screens/SignInScreen';
+import FlatListNB from './src/screens/FlatListNB';
+import FlatListWithData from './src/screens/FlatList';
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -12,7 +14,7 @@ const AppNavigator = createStackNavigator({
 });
 
 
-const AppStack = createStackNavigator({ Home: FlexBox });
+const AppStack = createStackNavigator({ Home: FlexBox, FlatList: FlatListNB, List: FlatListWithData });
 const AuthStack = createStackNavigator({ Intro: Walkthrough, SignIn: SignInScreen });
 
 export default createAppContainer(createSwitchNavigator(
